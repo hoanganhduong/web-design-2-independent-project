@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  color: #676767;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #FCF4F9;
+  padding: 0 1rem;
+}
+
+.history {
+  text-align: center;
+}
+
+h1, h2, h3, .list {
+  font-family: 'Josefin Slab', serif;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+.nav-check {
+    position: absolute;
+    top: -3em
+}
+
+.navicon {
+    right: 5%;
+    top: 15%;
+    display: block;
+    width: 20px;
+    cursor: pointer;
+    color: #676767;
+    position: absolute;
+}
+
+.nav-check:checked ~ .list {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+.list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list a {
+  text-decoration: none;
+  color: #676767;
+}
