@@ -35,7 +35,7 @@ header {
 }
 
 .navicon {
-    right: 5%;
+    left: 5%;
     top: 15%;
     display: block;
     width: 20px;
@@ -45,8 +45,7 @@ header {
 }
 
 .nav-check:checked ~ .list {
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 img {
@@ -58,10 +57,31 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-direction: column;
 }
 
 .list a {
   text-decoration: none;
   color: #676767;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-top: 1px solid #fff;
+  padding: .5em;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .navicon {
+    display: none;
+  }
+
+  nav .list, li {
+      display: inline-block;
+      border: none;
+      padding: .5rem 2rem;
+  }
+
 }
