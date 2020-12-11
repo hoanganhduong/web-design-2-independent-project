@@ -50,6 +50,7 @@ header {
 
 img {
   width: 100%;
+  display: block;
 }
 
 .list {
@@ -72,6 +73,10 @@ li {
   padding: .5em;
 }
 
+.medium {
+  display: none;
+}
+
 @media only screen and (min-width: 38em) {
 
   .navicon {
@@ -83,5 +88,42 @@ li {
       border: none;
       padding: .5rem 2rem;
   }
+
+  .small {
+    display: none;
+  }
+
+  .medium {
+    display: block;
+  }
+
+  .intro > .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .intro-content {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .intro-image > img {
+    width: 300px;
+    border: solid #fff 3px;
+    margin: 1rem;
+    box-shadow: 5px 5px 2px #ccc;
+  }
+
+  .rotate-right {
+    transform: rotate(2deg);
+  }
+
+  .rotate-left {
+    transform: rotate(-2deg);
+  }
+
+  .image-gradient {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #0e0e0e 100%);
+
 
 }
