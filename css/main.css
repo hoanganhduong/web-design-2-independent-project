@@ -2,9 +2,9 @@ html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  color: #676767;
+  color: #362E2E;
 }
 
 *, *::before, *::after {
@@ -12,8 +12,7 @@ html {
 }
 
 body {
-  background-color: #FCF4F9;
-  padding: 0 1rem;
+  background-color: #F8EFEF;
 }
 
 .history {
@@ -21,12 +20,13 @@ body {
 }
 
 h1, h2, h3, .list {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Paytone One', sans-serif;
 }
 
 header {
   position: relative;
   text-align: center;
+  background-color: #C9485B;
 }
 
 .nav-check {
@@ -62,7 +62,7 @@ img {
 
 .list a {
   text-decoration: none;
-  color: #676767;
+  color: #FFFFFF;
 }
 
 li {
@@ -73,8 +73,245 @@ li {
   padding: .5em;
 }
 
+.small {
+  text-align: center;
+}
+
+.small .button {
+  background-color: #C9485B;
+  color: #fff;
+  padding: .5rem 1.5rem .5rem;
+  margin: .5rem;
+}
+
+.hvrbox .small {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+}
+
 .medium {
   display: none;
+}
+
+.home-banner {
+  background: url(../images/guy-with-ice-cream.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.recipe-banner {
+  background: url(../images/recipe-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.banner img {
+  height: auto;
+  width: 100%;
+}
+
+.banner-content {
+  position: absolute;
+  text-align: center;
+  bottom: 30%;
+  color: #fff;
+  width: 100%;
+  padding: .5rem;
+}
+
+.figure {
+  padding-top: .5rem;
+}
+
+.figure.tag {
+  position: relative;
+  margin: 0;
+}
+
+.figure.tag::before {
+  position: absolute;
+  bottom: 5%;
+  display: block;
+  color: white;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right: 3rem;
+  font-weight: bold;
+}
+.figure.tag-history::before {
+  content: "History";
+  background: #C9485B;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.figure.tag-world::before {
+  content: "Around the world";
+  background: #C9485B;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.figure.tag-recipe::before {
+  content: "Recipes";
+  background: #C9485B;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #FFF;
+  padding: .5rem 1.5rem;
+  color: #C9485B;
+  font-weight: bold;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.button:hover {
+  background-color: #C9485B;
+  color: #fff;
+}
+
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.flavour {
+  position: relative;
+}
+
+.pick {
+  position: absolute;
+  bottom: 45%;
+  left: 45%;
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Paytone One', sans-serif;
+  background: rgba(0, 0, 0, 0.2);
+  padding: .5rem 1rem;
+}
+
+.first-check, .second-check, .third-check,
+.fourth-check, .fifth-check, .sixth-check {
+    position: absolute;
+    left: -1500px;
+}
+
+.first-click, .second-click, .third-click,
+.fourth-click, .fifth-click, .sixth-click {
+  opacity: 0%;
+  text-align: center;
+}
+
+.first-check:checked ~ .first-click,
+.second-check:checked ~ .second-click,
+.third-check:checked ~ .third-click,
+.fourth-check:checked ~ .fourth-click,
+.fifth-check:checked ~ .fifth-click,
+.sixth-check:checked ~ .sixth-click {
+    display: block;
+}
+
+.tag-german::before, .tag-india::before, .tag-indonesia::before,
+.tag-italy::before, .tag-japan::before, .tag-new-zealand::before,
+.tag-mexico::before, .tag-thailand::before, .tag-turkey::before {
+  background: #C9485B;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.tag-german::before {
+  content: "German";
+}
+
+.tag-india::before {
+  content: "India";
+}
+
+.tag-indonesia::before {
+  content: "Indonesia";
+}
+
+.tag-italy::before {
+  content: "Italy";
+}
+
+.tag-japan::before {
+  content: "Japan";
+}
+
+.tag-new-zealand::before {
+  content: "New Zealand";
+}
+
+.tag-mexico::before {
+  content: "Mexico";
+}
+
+.tag-thailand::before {
+  content: "Thailand";
+}
+
+.tag-turkey::before {
+  content: "Turkey";
+}
+
+.heading-text {
+  text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
@@ -100,6 +337,7 @@ li {
   .intro > .content {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .intro-content {
@@ -124,6 +362,54 @@ li {
 
   .image-gradient {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #0e0e0e 100%);
+    height: 200px;
 
+}
 
+.pick {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.first-check, .second-check, .third-check,
+.fourth-check, .fifth-check, .sixth-check  {
+    position: absolute;
+}
+
+.first-check:checked ~ .first-click,
+.second-check:checked ~ .second-click,
+.third-check:checked ~ .third-click,
+.fourth-check:checked ~ .fourth-click,
+.fifth-check:checked ~ .fifth-click,
+.sixth-check:checked ~ .sixth-click{
+  opacity: 100%;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.banner-content {
+  bottom: 30%;
+  left: 5%;
+  width: 50%;
+  text-align: left;
+}
+.heading {
+  background-color: #C9485B;
+  position: relative;
+}
+
+.heading-text {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  -moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
