@@ -93,7 +93,11 @@ header {
   display: none;
 }
 
-.history .large {
+/* .history .large {
+  display: none;
+} */
+
+.large {
   display: none;
 }
 
@@ -606,10 +610,10 @@ label {
     display: inline-block;
     margin: 0;
   }
-
+/*
   .history .large {
     display: block;
-  }
+  } */
 
   .large {
     display: block;
