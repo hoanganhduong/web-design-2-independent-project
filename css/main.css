@@ -135,7 +135,7 @@ li {
   margin: .5rem;
 }
 
-.hvrbox .small {
+/* .hvrbox .small {
   color: #fff;
   position: absolute;
   top: 50%;
@@ -144,7 +144,7 @@ li {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+} */
 
 .home-banner {
   background: url("../images/guy-with-ice-cream.jpg");
@@ -162,6 +162,10 @@ li {
   background-size: cover;
   height: 500px;
   position: relative;
+}
+
+.recipes .small {
+  margin-bottom: 2rem;
 }
 
 .banner img {
@@ -224,6 +228,7 @@ li {
   color: #c9485b;
   font-weight: bold;
   font-family: "Paytone One", sans-serif;
+  margin: 2rem;
 }
 
 .button:hover {
@@ -231,55 +236,15 @@ li {
   color: #fff;
 }
 
-.hvrbox {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-}
-
-.hvrbox img {
-  max-width: 100%;
-}
-
-.hvrbox .hvrbox-layer-bottom {
-  display: block;
-}
-
-.hvrbox .hvrbox-layer-top {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .6);
-  color: #fff;
-  padding: 0;
-  -moz-transition: all .4s ease-in-out 0s;
-  -webkit-transition: all .4s ease-in-out 0s;
-  -ms-transition: all .4s ease-in-out 0s;
-  transition: all .4s ease-in-out 0s;
-}
-
-.hvrbox:hover .hvrbox-layer-top,
-.hvrbox.active .hvrbox-layer-top {
-  opacity: 1;
-}
-
-.hvrbox .hvrbox-text {
+.hvrbox-layer-top {
   text-align: center;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  padding: .5rem;
+  padding-bottom: 2rem;
+}
+
+.hvrbox {
+  padding: 0;
+  margin: 0;
 }
 
 .flavour {
@@ -392,7 +357,7 @@ li {
 
 footer {
   display: flex;
-  background-color: #c9485b;
+  background-color: #362e2e;
   min-height: 50px;
   justify-content: center;
 }
@@ -449,6 +414,57 @@ label {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  .hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hvrbox img {
+    max-width: 100%;
+  }
+
+  .hvrbox .hvrbox-layer-bottom {
+    display: block;
+  }
+
+  .hvrbox .hvrbox-layer-top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 0;
+    -moz-transition: all .4s ease-in-out 0s;
+    -webkit-transition: all .4s ease-in-out 0s;
+    -ms-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s;
+  }
+
+  .hvrbox:hover .hvrbox-layer-top,
+  .hvrbox.active .hvrbox-layer-top {
+    opacity: 1;
+  }
+
+  .hvrbox .hvrbox-text {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .logotag {
