@@ -93,6 +93,10 @@ header {
   display: none;
 }
 
+.history .large {
+  display: none;
+}
+
 img {
   width: 100%;
   display: block;
