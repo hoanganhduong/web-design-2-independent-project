@@ -4,15 +4,23 @@
   <meta charset="utf-8">
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon"
+      type="image/png"
+      href="images/favicon-196.png">
   <link href="css/main.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Paytone+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <ul class="skip-links">
+    <li><a class="a" href="#nav">skip to navigation</a></li>
+    <li><a href="#main">skip to the main content</a></li>
+  </ul>
+  <header role="banner">
     <h1 class="none">Sweet Ice</h1>
     <a class="logotag" href="index.html"><img class="logo" src="images/logo.png" alt="logo" width="50"></a>
-    <nav role="navigation">
+    <nav role="navigation" id="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="hidden" for="nav-check">MENU
         <img class="navicon" src="images/nav-icon.svg" alt=""></label>
@@ -30,7 +38,7 @@
       </div>
     </div>
   </header>
-  <main class="home">
+  <main class="home" id="main" role="main">
     <section class="grid">
       <div class="hvrbox">
         <figure class="figure tag tag-history hvrbox-layer-bottom">
@@ -70,7 +78,7 @@
       </div>
     </section>
     <section class="ranking">
-      <form class="" action="index.html" method="post">
+      <form action="index.html" method="post">
         <h2>TOP 6 FLAVOURS IN 2020</h2>
         <div class="grid">
           <div class="flavour">
@@ -119,7 +127,7 @@
       </form>
     </section>
   </main>
-  <footer>
+  <footer role="contentinfo">
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
