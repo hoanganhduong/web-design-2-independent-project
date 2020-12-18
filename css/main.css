@@ -100,6 +100,11 @@ img {
   color: #fff;
 }
 
+.list a:hover {
+  color: #c9485b;
+  background-color: #fff;
+}
+
 li {
   text-align: center;
   border-top: 1px solid #fff;
