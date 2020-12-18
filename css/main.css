@@ -607,6 +607,10 @@ label {
     margin: 0;
   }
 
+  .history .large {
+    display: block;
+  }
+
   .large {
     display: block;
   }
