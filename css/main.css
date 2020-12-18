@@ -30,6 +30,16 @@ header {
   text-align: center;
   background-color: #c9485b;
   padding-top: .5rem;
+  padding-bottom: 0;
+}
+
+.ranking {
+  padding: 0 1rem;
+}
+
+.ranking h2 {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .skip-links li {
@@ -248,7 +258,7 @@ li {
   height: 100%;
   background: rgba(0, 0, 0, .6);
   color: #fff;
-  padding: 15px;
+  padding: 0;
   -moz-transition: all .4s ease-in-out 0s;
   -webkit-transition: all .4s ease-in-out 0s;
   -ms-transition: all .4s ease-in-out 0s;
@@ -314,6 +324,8 @@ li {
 .fifth-check:checked ~ .fifth-click,
 .sixth-check:checked ~ .sixth-click {
   display: block;
+  opacity: 1;
+  text-align: center;
 }
 
 .tag-german::before,
@@ -381,12 +393,17 @@ li {
 footer {
   display: flex;
   background-color: #c9485b;
-  min-height: 100px;
+  min-height: 50px;
+  justify-content: center;
 }
 
 footer li {
   list-style-type: none;
   border: none;
+}
+
+footer ul {
+  padding: 0;
 }
 
 footer a {
@@ -399,6 +416,23 @@ footer nav {
   justify-content: center;
   display: inline-block;
   margin: 0 auto;
+}
+
+label {
+  font-family: "Paytone One", sans-serif;
+  font-size: 1.2rem;
+  color: #c9485b;
+}
+
+.flavour, .rotate-left, .rotate-right {
+  transition: .3s;
+  padding: .5rem;
+}
+
+.flavour:hover,
+.rotate-left:hover,
+.rotate-right:hover {
+  transform: translate(0, -10px);
 }
 
 @media only screen and (min-width: 25em) {
@@ -416,7 +450,6 @@ footer nav {
     font-size: 110%;
     line-height: 1.4;
   }
-
 
   .logotag {
     display: inline-block;
@@ -489,25 +522,6 @@ footer nav {
     display: inline-block;
   }
 
-  .first-check,
-  .second-check,
-  .third-check,
-  .fourth-check,
-  .fifth-check,
-  .sixth-check {
-    position: absolute;
-  }
-
-  .first-check:checked ~ .first-click,
-  .second-check:checked ~ .second-click,
-  .third-check:checked ~ .third-click,
-  .fourth-check:checked ~ .fourth-click,
-  .fifth-check:checked ~ .fifth-click,
-  .sixth-check:checked ~ .sixth-click {
-    opacity: 1;
-    text-align: center;
-  }
-
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -569,7 +583,7 @@ footer nav {
 
   .recipes .medium {
     display: inline-block;
-    margin: none;
+    margin: 0;
   }
 
   .large {
@@ -592,6 +606,10 @@ footer nav {
 
   .america .medium {
     display: none;
+  }
+
+  .masses, .america, .invention {
+    padding: 2rem;
   }
 
 }
