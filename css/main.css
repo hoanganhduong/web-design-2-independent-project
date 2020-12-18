@@ -98,11 +98,13 @@ img {
 .list a {
   text-decoration: none;
   color: #fff;
+  padding: .5rem;
 }
 
 .list a:hover {
   color: #c9485b;
   background-color: #fff;
+  padding: .5rem;
 }
 
 li {
@@ -372,6 +374,33 @@ li {
   padding: .5rem;
 }
 
+.masses, .america, .invention {
+  padding: .5rem;
+}
+
+footer {
+  display: flex;
+  background-color: #c9485b;
+  min-height: 100px;
+}
+
+footer li {
+  list-style-type: none;
+  border: none;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Paytone One", sans-serif;
+}
+
+footer nav {
+  justify-content: center;
+  display: inline-block;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 25em) {
 
   html {
@@ -388,6 +417,12 @@ li {
     line-height: 1.4;
   }
 
+
+  .logotag {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
   .navicon {
     display: none;
   }
@@ -402,15 +437,20 @@ li {
     display: none;
   }
 
-  .recipes .medium {
-    margin: 0;
-  }
-
   .medium {
     display: block;
     border: solid #fff 3px;
     margin: 1rem;
     box-shadow: 5px 5px 2px #ccc;
+  }
+
+  .recipes .medium {
+    margin: 0;
+    border: none;
+  }
+
+  .large {
+    display: none;
   }
 
   .intro > .content {
@@ -506,12 +546,38 @@ li {
     line-height: 1.5;
   }
 
+  .header {
+    min-height: 100px;
+  }
+
+  .logotag {
+    margin: 0;
+    float: left;
+  }
+
+  .navigation {
+    float: none;
+    text-align: right;
+    padding-right: 1rem;
+  }
+
   .medium {
+    display: none;
     border: none;
     box-shadow: none;
   }
 
+  .recipes .medium {
+    display: inline-block;
+    margin: none;
+  }
+
+  .large {
+    display: block;
+  }
+
   .large > img {
+    display: block;
     border: solid #fff 3px;
     box-shadow: 5px 5px 2px #ccc;
   }
