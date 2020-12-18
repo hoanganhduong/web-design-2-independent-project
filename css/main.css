@@ -51,6 +51,10 @@ header {
     position: absolute;
 }
 
+.hidden {
+  color: #C9485B;
+}
+
 .nav-check:checked ~ .list {
     display: block;
 }
