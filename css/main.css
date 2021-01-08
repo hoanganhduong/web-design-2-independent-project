@@ -15,6 +15,7 @@ html {
 
 body {
   background-color: #f8efef;
+  margin: 0;
 }
 
 .history {
@@ -191,10 +192,6 @@ li {
   padding: .5rem;
 }
 
-.figure {
-  padding-top: .5rem;
-}
-
 .figure.tag {
   position: relative;
   margin: 0;
@@ -237,7 +234,6 @@ li {
   color: #c9485b;
   font-weight: bold;
   font-family: "Paytone One", sans-serif;
-  margin: 2rem;
 }
 
 .button:hover {
@@ -358,10 +354,7 @@ li {
 .logo {
   width: 150px;
   padding: .5rem;
-}
-
-.masses, .america, .invention {
-  padding: .5rem;
+  margin-left: 2rem;
 }
 
 footer {
@@ -400,13 +393,16 @@ label {
 
 .flavour, .rotate-left, .rotate-right {
   transition: .3s;
-  padding: .5rem;
 }
 
 .flavour:hover,
 .rotate-left:hover,
 .rotate-right:hover {
   transform: translate(0, -10px);
+}
+
+.heading-text h3 {
+  font-size: 21px;
 }
 
 @media only screen and (min-width: 25em) {
